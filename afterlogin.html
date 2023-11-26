@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfterLogin</title>
+    <link rel="stylesheet" type="text/css" href="afterlogin.css">
+    <script>
+      const tableData = async ()=>{
+        const name = document.getElementById('name');
+        const address = document.getElementById('address');
+        const food = document.getElementById('food');
+        const email = document.getElementById('email');
+        const phoneNumber = document.getElementById('phoneNumber');
+
+        const response = await fetch('http://localhost:4500/getAll',{
+          method : 'GET',
+          headers : {
+            'Content-Type' : "application/json"
+          }
+        });
+        const data = await response.json();
+        let tableBody = document.getElementById('table-body');
+        data.map((element) => {
+          fillTable(element,tableBody);
+        })
+      }
+      function fillTable(element,body)
+      {
+        console.log(element);
+        let x1 = document.createElement('td');
+        x1.innerHTML=element.name;
+        let x2 = document.createElement('td');
+        x2.innerHTML=element.email;
+        let x3 = document.createElement('td');
+        x3.innerHTML=element.mobile;
+        let x4 = document.createElement('td');
+        x4.innerHTML=element.food;
+        // let x5 = document.createElement('td');
+        // x1.innerHTML=element.address;
+        let tr = document.createElement('tr');
+        tr.appendChild(x1);
+        tr.appendChild(x2);
+        tr.appendChild(x3);
+        tr.appendChild(x4);
+        body.appendChild(tr);
+      }
+      window.onload = tableData;
+    </script>
+</head>
+<header><b>&#128386 ashutoshthakur626@gmail.com &#128100+919343778055</b></header>
+<body>
+  <div class="head">
+  <div class="name">
+    <img class="logo" src="logo.png" height="58 px">  DAANPATRA</div>
+  <nav>
+    <ul>
+      <li>
+        <a href="mainPage.html" target="_blank">Home</a>
+        <a href="allservices.html" target="_blank">Our Services</a>
+        <a href="fdf.html" target="_blank">Food Donation Form</a>
+        <a href="index.html" target="_blank">Log out</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>email</th>
+            <th>Phone number</th>
+            <th>Food</th>
+            <th>Address</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+      </table>
+    
+</body>
+<footer>
+  <u><p>&copy; 2023 Food Donation. All rights reserved.</p></u>
+</footer>
+</html>

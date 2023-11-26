@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Donation Form</title>
+  <link rel="stylesheet" href="./fdf.css">
+  <script>
+    let connect = async () =>
+    {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const food = document.getElementById('food').value;
+      const address = document.getElementById('address').value;
+      const mobile = document.getElementById('mobile').value;
+      const json = {name,email,food,mobile,address};
+      const response = await fetch('http://localhost:4500/form',{
+        method: 'POST',
+        headers : {
+          'Content-type' : "application/json"
+        },
+        body: JSON.stringify(json)
+      });
+      const data = await response.json();
+      alert(data);
+      alert("Form fill successfully")
+    }
+    window.onload = connect
+  </script>
+</head>
+<body>
+  
+  <h3>Food Donation Form</h3>
+  <div>
+    <p><b>Name:</b></p>
+    <input type="text" id="name" name="name" required>
+    
+    <p><b>Email:</b></p>
+    <input type="email" id="email" name="email" required>
+    
+    <p><b>Food Name:</b></p>
+    <input type="text" id="food" name="food" required>
+    
+    <p><b>Address:</b></p>
+    <input type="text" id="address" name="address" required>
+
+    <p><b>Mobile Number:</b></p>
+    <input type="text" id="mobile" name="mobile" required>
+
+    <input type="submit" onclick="connect()">
+  
+  </div>
+  
+</body>
+</html>
+
+
+
+

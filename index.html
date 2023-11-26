@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-signup.css">
+    <title>login-signup</title>
+    <script>
+        const handleLogin =async () =>{
+            const username=document.getElementById('usernamea').value
+            const password=document.getElementById('passworda').value
+            const response=await fetch('http://localhost:4500/login',{
+                method : 'POST',
+                body : JSON.stringify({username,password}),
+                headers : {
+                    "Content-Type":"application/json"
+                }
+                    })
+                    const data = await response.json()
+                    if(data.token)
+                    {
+                        console.log(data.message)//sikhna hai
+                        window.location.href="afterlogin.html"
+                    }
+                            else
+                    {
+                        console.log(data.message)
+                        alert(data.message)
+                    }
+                }
+
+                const handleRegister =async () =>{
+            const username=document.getElementById('username').value
+            const email=document.getElementById('email').value
+            const password=document.getElementById('password').value
+            const response=await fetch('http://localhost:4500/register',{
+                method : 'POST',
+                body : JSON.stringify({username,email,password}),
+                headers : {
+                    "Content-Type":"application/json"
+                }
+                    })
+                    const data = await response.json()
+                    alert(data.token)
+                    if(data.token)
+                    {
+                        console.log(data.message)//sikhna hai
+                        alert(data.message)
+                    }
+                    else
+                    {
+                        console.log(data.message)
+                        alert(data.message)
+                    }
+                    
+                }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="signin-signup">
+            <div class="sign-in-form">
+                <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" id="usernamea">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" id="passworda">
+                </div>
+                <input onclick="handleLogin()" type="submit" value="Login" class="btn">
+                <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Sign up</a></p>
+            </div>
+            <div action="" class="sign-up-form">
+                <h2 class="title">Sign up</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" id="username">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Email" id="email">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" id="password">
+                </div>
+                <input type="submit" value="Sign up" onclick="handleRegister()" class="btn"> 
+                <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2">Sign in</a></p>
+            </div>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Member of our Team?</h3>
+                    <p>If you are member of our team, Please login in and press the login button.</p>
+                    <button class="btn" id="sign-in-btn">Sign in</button>
+                </div>
+                <img src="signin.svg" alt="" class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>New to Team?</h3>
+                    <p>If you are new in our team, Please sign in firstly fill the sign up form and click the submit button then you will become a part of our team</p>
+                    <button class="btn" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="signup.svg" alt="" class="image">
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
