@@ -19,7 +19,7 @@
 .para1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
-    bottom: 6.5rem;
+    bottom: 10rem;
     padding-left: 18rem;
     font-size: large;
     font-weight: bold;
@@ -36,7 +36,7 @@
 .para2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
-    bottom: 6.5rem;
+    bottom: 10rem;
     padding-left: 18rem;
     padding-right: 1.5rem;
     font-size: large;
@@ -54,7 +54,7 @@
 .para3{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
-    bottom: 6.5rem;
+    bottom: 9rem;
     padding-left: 18rem;
     padding-right: 4rem;
     font-size: large;

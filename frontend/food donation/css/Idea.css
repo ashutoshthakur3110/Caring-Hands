@@ -1,0 +1,84 @@
+.idea{
+    background-color: rgb(255, 237, 179);
+    margin-top: 3rem;
+}
+
+.personimg{
+    height: 3rem;
+    position: relative;
+    left: 63rem;
+    top: 14rem;
+}
+
+.location{
+    height: 3rem;
+    position: relative;
+    left: 48rem;
+    top: 31rem
+}
+
+.header{
+    text-align: center;
+    padding-top: 2rem;
+    font-family: garamond;
+    font-size: xx-large;
+}
+
+.head1{
+    padding-left: 8rem;
+    padding-top: 6rem;
+    font-family: garamond;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #005e00;
+    
+}
+
+.describe1{
+    font-family: garamond;
+    font-weight: bold;
+    padding-right: 50rem;
+    line-height: 2rem;
+    padding-left: 8rem;
+}
+
+.counter-box {
+  font-size: 24px;
+  font-weight: bold;
+  color: #005e00;
+  position: relative;
+  bottom: 26.8rem;
+  padding-left: 63.4rem;
+  transition: transform 0.3s ease;
+}
+
+.served{
+    font-family: garamond; 
+    position: relative;
+    bottom: 30.6rem; 
+    padding-left: 61.3rem;
+    font-size: larger;
+    font-weight: bold;
+    color: #005e00;
+}
+
+.locationCounter-box{
+    font-size: 24px;
+    font-weight: bold;
+    color: #005e00;
+    position: relative;
+    bottom: 11.3rem;
+    padding-left: 51.8rem;
+    transition: transform 0.3s ease;
+
+}
+
+.cities{
+    font-family: garamond; 
+    position: relative;
+    bottom: 17.3rem; 
+    padding-left: 51.1rem;
+    font-size: larger;
+    font-weight: bold;
+    color: #005e00;
+}

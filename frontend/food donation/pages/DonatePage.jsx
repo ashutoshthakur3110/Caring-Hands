@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Dashboard from '../components/Dashboard';
 import FrontImg from '../components/FrontImg';
+import Footer from '../components/Footer';
 import "../css/donatePage.css";
 
 const DonatePage = () => {
@@ -55,7 +56,9 @@ const DonatePage = () => {
         <br />
         <button onClick={submitDetail} className='submitBtn' type="button">Submit</button>
       </form>
+      <Footer/>
     </div>
+    
   );
 };
 

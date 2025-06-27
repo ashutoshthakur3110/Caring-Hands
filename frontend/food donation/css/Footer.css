@@ -1,0 +1,14 @@
+.footer{
+    height: 6rem;
+    background-color: rgb(247, 204, 148);
+    margin-top: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 86%;
+    border-radius: 8px;
+    
+}
+
+p{
+    padding-left: 10rem;
+    padding-top: 2.6rem;
+}
