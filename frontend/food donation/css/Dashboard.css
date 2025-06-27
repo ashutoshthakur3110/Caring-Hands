@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard{
+    color: #005e00;
+    font-family: sans-serif;
+    padding-left: 7rem;
+    padding-top: 13px;
+    font-weight: bold;
+    background-color: #faf3e1;
+}
+
+.buttons{
+    position: relative;
+    bottom: 23px;
+    padding-left: 30rem;
+    display: flex;
+    gap: 60px;
+
+}
+
+button{
+    border: none;
+    background-color: white;
+    font-size: 90%;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #faf3e1;
+    cursor: pointer;
+}
+
+/* button:hover {
+  background-color: green;
+  color: #ffdf8d;
+} */

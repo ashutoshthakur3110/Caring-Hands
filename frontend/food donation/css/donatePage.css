@@ -1,0 +1,41 @@
+body{
+    background-color: #faf3e1;
+}
+
+.img{
+    width: 100%;
+    height: 350px;
+    border-radius: .3rem;
+    padding-bottom: 4rem;
+}
+
+h2{
+    color: #005e00;
+    font: sans-serif;
+}
+
+form{
+    text-align: center;
+    background-color: #f7e8c3;
+    border-radius: 1rem;
+    width: 40rem;
+    height: 46rem;
+    margin-left: 23rem;
+    padding-top: 2rem;
+}
+
+input{
+    margin-bottom: 3rem;
+    font-size: large;
+    text-align: center;
+    padding: 9px 3rem 9px 3rem; 
+    border-radius: 9px;
+    border: none;   
+}
+
+.submitBtn{
+    background-color: #005e00;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+}

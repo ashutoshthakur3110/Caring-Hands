@@ -1,0 +1,64 @@
+.problem{
+    background-color: rgb(255, 200, 98);
+    margin-top: -10rem;
+}
+
+.head{
+    padding-top: 1rem;
+    text-align: center;
+    font-family: sans-serif;
+    color: #005e00;
+}
+
+.img1{
+    width: 9rem;
+    padding-top: 4rem;
+    padding-left: 5rem;
+}
+
+.para1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    bottom: 6.5rem;
+    padding-left: 18rem;
+    font-size: large;
+    font-weight: bold;
+    color: #005e00;
+    padding-right: 5rem;  
+}
+
+.img2{
+    width: 9rem;
+    padding-left: 5rem;
+    padding-top: 2rem;
+}
+
+.para2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    bottom: 6.5rem;
+    padding-left: 18rem;
+    padding-right: 1.5rem;
+    font-size: large;
+    font-weight: bold;
+    color: #005e00;
+    
+}
+
+.img3{
+    width: 9rem;
+    padding-left: 5rem;
+    padding-top: 1rem;
+}
+
+.para3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    bottom: 6.5rem;
+    padding-left: 18rem;
+    padding-right: 4rem;
+    font-size: large;
+    font-weight: bold;
+    color: #005e00;
+}
+
