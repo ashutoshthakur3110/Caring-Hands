@@ -17,6 +17,13 @@
     top: 31rem
 }
 
+.logo{
+    height: 5rem;
+    position: relative;
+    left: 67rem;
+    top: 31.6rem
+}
+
 .header{
     text-align: center;
     padding-top: 2rem;
@@ -55,7 +62,7 @@
 .served{
     font-family: garamond; 
     position: relative;
-    bottom: 30.6rem; 
+    bottom: 32.6rem; 
     padding-left: 61.3rem;
     font-size: larger;
     font-weight: bold;
@@ -76,8 +83,29 @@
 .cities{
     font-family: garamond; 
     position: relative;
-    bottom: 17.3rem; 
+    bottom: 19.3rem; 
     padding-left: 51.1rem;
+    font-size: larger;
+    font-weight: bold;
+    color: #005e00;
+}
+
+.VolunteerCounter{
+font-size: 24px;
+    font-weight: bold;
+    color: #005e00;
+    position: relative;
+    bottom: 13rem;
+    padding-left: 74.8rem;
+    transition: transform 0.3s ease;
+
+}
+
+.volunteer{
+    font-family: garamond; 
+    position: relative;
+    bottom: 23.4rem; 
+    padding-left: 73rem;
     font-size: larger;
     font-weight: bold;
     color: #005e00;

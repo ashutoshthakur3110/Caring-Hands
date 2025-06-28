@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+#logo{
+    height: 2.2rem;
+    position: relative;
+    margin-bottom: -1.9rem;
+    left: -3rem;
+    
+    
+}
+
 .dashboard{
     color: #005e00;
     font-family: garamond;

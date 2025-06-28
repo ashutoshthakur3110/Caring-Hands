@@ -1,6 +1,7 @@
 import "../css/Idea.css"
 import Counter from "../components/Counter"
 import LocationCounter from "../components/LocationCounter"
+import VolunteerCounter from "../components/VolunteerCounter"
 
 
 const Idea = () => {
@@ -8,6 +9,7 @@ const Idea = () => {
     <div className="idea">
         <img src="./public/personimg.png" className="personimg"></img>
         <img src="./public/location.png" className="location"></img>
+        <img src="./public/logo.png" className="logo"></img>
     <h2 className="header">The Idea</h2>
     <h3 className="head1">Who we are?</h3>
     <p className="describe1">The Caring Hands is a volunteer based, zero-funds organization that works to get surplus food from restaurants and the community to serve less fortunate people.</p>
@@ -15,9 +17,11 @@ const Idea = () => {
    
     <Counter target="150" />
     <LocationCounter target="20"/>
+    <VolunteerCounter target="50"/>
 
     <p className="served">Meals Served</p>
     <p className="cities">Cities</p>
+    <p className="volunteer">Volunteers</p>
     </div>
   )
 }

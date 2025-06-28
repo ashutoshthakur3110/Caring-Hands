@@ -12,11 +12,17 @@ const joinForm = () => {
 
 function Dashboard(){
     return(
+        <>
+        
         <div className="dashboard">
+            <div>
+                <img src="./public/logo.png" id="logo"></img>
+            </div>
             <h2>
                 CARING HANDS
             </h2>
             <div className="buttons">
+                
             <button>Home</button>
             <button onClick={donateForm}>Donate</button>
             <div id="volunteer">
@@ -27,6 +33,7 @@ function Dashboard(){
             <button onClick={joinForm}>Join Us</button>
             </div>
         </div>
+        </>
     )
 }
 
