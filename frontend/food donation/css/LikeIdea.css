@@ -1,0 +1,23 @@
+.LikeIdea{
+    background-color: rgb(255, 97, 97);
+    margin-top: 2rem;
+    padding: 1.3rem;
+}
+
+h1{
+    font-family: garamond;
+    margin-left: 21rem;
+}
+
+.join{
+    position: relative;
+    font-family: garamond;
+    background-color: green;
+    font-size: large;
+    bottom: 6px;
+    padding: 8px;
+    border-radius: 16px;
+    margin-left: 22px;
+
+
+}
