@@ -1,5 +1,5 @@
 .footer{
-    height: 6rem;
+    height: 9rem;
     background-color: rgb(247, 204, 148);
     margin-top: 3rem;
     font-family: 'Times New Roman', Times, serif;
@@ -11,7 +11,7 @@
 .care{
     padding-left: 12rem; 
     font-family: garamond;
-    font-size: medium;
+    font-size: 1.2rem;
     position: relative;
     padding-top: 9px;
     font-weight: bold;
@@ -24,7 +24,32 @@
     right: 1rem;
 }
 
-.instagram{
+.contacts{
+    font-family: garamond;
+    position: relative;
+    padding-top: 4px;
+    padding-left:64rem;
+    padding-bottom: 9px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    bottom: 2rem;
+}
+
+.locationImg{
+    height: 3rem;
+}
+
+.address{
+    font-family: garamond;
+    font-weight: bold;
+    padding-left: 67rem;
+    padding-right: 4rem;
+    position: relative;
+    bottom: 1.7rem;
+    font-size: 1rem;
+}
+
+/* .instagram{
     height: 1.4rem;
     padding: 10px;
     position: relative;
@@ -33,4 +58,4 @@
     border: 2px solid #000000;
     border-radius: 50%;
     margin-right: 20px;
-}
+} */

@@ -1,0 +1,15 @@
+.Journey{
+    background-color: #ffedb3;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    height: 38rem;
+}
+
+.ourJourney{
+    font-family: garamond;
+    font-weight: bold;
+    padding-right: 50rem;
+    line-height: 2rem;
+    padding-left: 10rem;
+    padding-top: 2.6rem;
+}

@@ -19,7 +19,7 @@
 .para1{
     font-family: garamond;
     position: relative;
-    bottom: 10rem;
+    bottom: 6rem;
     padding-left: 18rem;
     font-size: large;
     font-weight: bold;
@@ -36,7 +36,7 @@
 .para2{
     font-family: garamond;
     position: relative;
-    bottom: 10rem;
+    bottom: 7rem;
     padding-left: 18rem;
     padding-right: 1.5rem;
     font-size: large;
@@ -54,7 +54,7 @@
 .para3{
     font-family: garamond;
     position: relative;
-    bottom: 9rem;
+    bottom: 6rem;
     padding-left: 18rem;
     padding-right: 4rem;
     font-size: large;
