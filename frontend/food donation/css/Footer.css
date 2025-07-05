@@ -1,5 +1,5 @@
 .footer{
-    height: 9rem;
+    height: 14rem;
     background-color: rgb(247, 204, 148);
     margin-top: 3rem;
     font-family: 'Times New Roman', Times, serif;
@@ -27,26 +27,55 @@
 .contacts{
     font-family: garamond;
     position: relative;
-    padding-top: 4px;
-    padding-left:64rem;
-    padding-bottom: 9px;
+    padding-left:64.6rem;
+    padding-bottom: 9px;    
     font-size: 1.2rem;
     font-weight: bold;
     bottom: 2rem;
 }
 
 .locationImg{
-    height: 3rem;
+    height: 1.5rem;
+    position: relative;
+    left: 64rem;
+    top: 5.7rem;
 }
 
-.address{
+.callingImg{
+    height: 1.3rem;
+    position: relative;
+    left: 62.8rem;
+    top: 8.1rem;
+
+}
+
+.emailImg{
+    height: 1.2rem;
+    position: relative;
+    left: 61.63rem;
+    top: 9.8rem;
+
+}
+
+.details{
     font-family: garamond;
     font-weight: bold;
-    padding-left: 67rem;
+    padding-left: 66rem;
     padding-right: 4rem;
+    padding-bottom: 8px;
     position: relative;
     bottom: 1.7rem;
     font-size: 1rem;
+}
+
+.descrip{
+    font-family: garamond;
+    line-height: 1.2rem;
+    font-weight: bold;
+    margin-left: 13rem;
+    margin-right: 50rem;
+    position: relative;
+    bottom: 6.4rem;
 }
 
 /* .instagram{

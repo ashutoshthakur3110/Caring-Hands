@@ -5,13 +5,24 @@ const donateForm = () => {
     window.open('http://localhost:5173/donate');
 }
 
+const Homepage = () => {
+    window.open('http://localhost:5173')
+}
+
 const joinForm = () => {
-    window.open('https://docs.google.com/forms/d/e/1FAIpQLSfuUwVPIsDIIJ8-Gr-RzdNTNoCV97NrhTv5VjEnCVVWYjHKNA/viewform?usp=header')
+    window.open('http://localhost:5173/joinow')
 }
 
 // ✅ New scroll function added
 const scrollToJourney = () => {
     const section = document.getElementById("journey");
+    if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+    }
+}
+
+const scrollToContact = () => {
+    const section = document.getElementById("contact");
     if (section) {
         section.scrollIntoView({ behavior: "smooth" });
     }
@@ -28,14 +39,14 @@ function Dashboard(){
                 CARING HANDS
             </h2>
             <div className="buttons">
-                <button>Home</button>
+                <button onClick={Homepage}>Home</button>
                 <button onClick={donateForm}>Donate</button>
 
                 <div id="volunteer">
                     {/* ✅ Scroll trigger */}
                     <button onClick={scrollToJourney}>Our Journey</button>
                 </div>
-                <button>Contacts</button>
+                <button onClick={scrollToContact}>Contacts</button>
                 <button onClick={joinForm}>Join Us</button>
             </div>
         </div>
