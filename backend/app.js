@@ -25,12 +25,32 @@ const userSchema = mongoose.Schema({
     quantity: {type:Number}
 })
 
+const joinSchema = mongoose.Schema({
+    name: {type:String},
+    number: {type:String},
+    alternateNumber: {type:String},
+    address: {type:String},
+    email: {type:String},
+    aadharNumber: {type:Number},
+    city: {type:String},
+    state: {type:String},
+    country: {type:String}
+})
+
 const User = new mongoose.model("donation-data",userSchema);
+const Join = new mongoose.model("join-data",joinSchema);
 
 app.post("/donationDetail" , async(req,res)=>{
     const{name,number,alternateNumber,address,email,items,quantity} = req.body;
     const newUser = new User({name,number,alternateNumber,address,email,items,quantity})
     await newUser.save();
+    res.send({message:"data saved"})
+})
+
+app.post("/joinDetail" , async(req,res)=>{
+    const{name,number,alternateNumber,address,email,aadharNumber,city,state,country} = req.body;
+    const newJoin = new Join({name,number,alternateNumber,address,email,aadharNumber,city,state,country})
+    await newJoin.save();
     res.send({message:"data saved"})
 })
 
