@@ -5,7 +5,6 @@ import Footer from '../components/Footer';
 import "../css/donatePage.css";
 
 const DonatePage = () => {
-  // 🟢 Yahi hona chahiye pehle
   const [data, setData] = useState({
     name: "",
     number: "",
